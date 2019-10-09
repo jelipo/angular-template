@@ -13,12 +13,14 @@
       true,
       "attribute",
       "app",
+      "board",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
       "app",
+      "board",
       "kebab-case"
     ],
     "import-blacklist": [

@@ -1,0 +1,126 @@
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-layout {
+  height: 100vh;
+}
+
+.menu-sidebar {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
+}
+
+.header-trigger {
+  height: 48px;
+  padding: 10px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s, padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.sidebar-logo {
+  position: relative;
+  height: 48px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 48px;
+  background: #001529;
+  transition: all .3s;
+}
+
+.sidebar-logo img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.sidebar-logo h1 {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+nz-header {
+  padding: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 2;
+}
+
+.app-header {
+  position: fixed;
+  height: 48px;
+  width: 100%;
+  line-height: 48px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+}
+
+nz-content {
+  margin: 24px;
+}
+
+.left-bar {
+  position: fixed;
+  width: 246px;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #000c17;
+  box-shadow: 2px 0 8px -5px rgba(0, 21, 41, 0.4);
+  z-index: 2;
+}
+
+
+.top-bar {
+  height: 48px;
+  min-width: 1360px;
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding-left: 246px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.out-out-content {
+  padding-top: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 246px;
+  height: 100%;
+  position: absolute;
+
+  .out-content {
+    padding: 15px 15px 5px 15px;
+    box-sizing: border-box;
+
+    .main-content {
+      background-color: #FFFFFF;
+      min-height: 400px;
+      min-width: 1360-246px;
+      width: 100%;
+      box-shadow: 0 0 3px #f0f1f2;
+      border-radius: 2px;
+    }
+  }
+}
+
